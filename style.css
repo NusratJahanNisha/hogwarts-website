@@ -1,0 +1,24 @@
+.container{
+    margin-bottom: 150px;
+}
+.card img{
+    height: 600px;
+    width: 535px;
+}
+.card{
+    box-shadow: 5px 5px 12px lightgrey;
+    border-radius: 10px;
+}
+.card p{
+    color: grey;
+}
+.school-name{
+    text-align: center;
+}
+.animation{
+    transition: padding-left 5s ease-out .1s;
+}
+.animation:hover{
+    padding-left: 950px;
+}
+
