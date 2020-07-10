@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hogwarts admission</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="shortcut icon" href="images/hogwarts-logo.png" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
@@ -50,7 +51,7 @@
     <div class="container">
     
         <div class="school-name"> <h1>Hogwarts School of Witchcraft and Wizardry</h1></div>
-        <div class="d-flex justify-content-center">  
+        <div class="img-fluid d-flex justify-content-center">  
             <img src="images/hogwarts-logo.png" alt=""></div>
           
         
@@ -62,7 +63,7 @@
 <!-- <p>carousel</p> -->
 
 
-<div class="container">
+<div class="container" id="home">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -71,7 +72,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/hogwarts-castle.jpg" class="d-block w-100" alt="...">
+            <img src="images/castle.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Hogwarts Castle</h5>
               <p>Hogwarts School of Witchcraft and Wizardry, commonly shortened to Hogwarts, is a British  school of magic for students aged eleven to eighteen. The school was founded by four great wizards Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin in 990AD.</p>
@@ -107,41 +108,47 @@
 <!-- <p>houses</p> -->
 
 
-<div class="container">
+<div class="container" id="houses">
+  <h1>Choose A House</h1>
+  <h2>And Become a Wizard</h2> <br><br>
     <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="images/gryffindor-house.jpg" class="card-img-top" alt="...">
+        <div class="col mb-4 col-12	col-sm-12	col-md-4 col-lg-6	col-xl-6">
+          <div class="card" id="gryffindor">
+            <div class="img-fluid"> <img src="images/gryffindor-house.jpg" class="card-img-top" alt="..."></div>
             <div class="card-body">
-              <h2 class="card-title">Gryffindor</h3>
+              <h3 class="card-title">Gryffindor</h3>
               <p class="card-text">Gryffindor values courage, bravery, nerve and chivalry. Its mascot is the lion, and its colours are scarlet and gold. The Gryffindor motto is "Their daring, nerve and chivalry set Gryffindors apart".</p>
+              <button class="btn btn-danger">Join Gryffindor</button>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="images/hufflepuff-house.png" class="card-img-top" alt="...">
+        <div class="col mb-4 col-12	col-sm-12	col-md-4 col-lg-6	col-xl-6">
+          <div class="card" id="hufflepuff">
+            <div class="img-fluid"><img src="images/hufflepuff-house.png" class="card-img-top" alt="..."></div>
             <div class="card-body">
-              <h2 class="card-title">Hufflepuff</h2>
+              <h3 class="card-title">Hufflepuff</h3>
               <p class="card-text">The Hufflepuff motto is "Those patient Hufflepuffs are true and unafraid of toil". The Head of this house is the Herbology teacher Pomona Sprout, and the house ghost is The Fat Friar.</p>
+              <button class="btn btn-warning">Join Hufflepuff</button>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="images/slytherin-house.png" class="card-img-top" alt="...">
+        <div class="col mb-4 col-12	col-sm-12	col-md-4 col-lg-6	col-xl-6">
+          <div class="card" id="slytherin">
+            <div class="img-fluid"><img src="images/slytherin-house.png" class="card-img-top" alt="..."></div>
             <div class="card-body">
-              <h2 class="card-title">Slytherin</h2>
+              <h3 class="card-title">Slytherin</h3>
               <p class="card-text">The Slytherin motto is "Slytherin will help you on your way to greatness". Salazar Slytherin founded the house. The Head of House is Severus Snape until near the end of the sixth book.</p>
+              <button class="btn btn-success">Join Slytherin</button>
             </div>
           </div>
         </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="images/ravenclaw-house.jpg" class="card-img-top" alt="...">
+        <div class="col mb-4 col-12	col-sm-12	col-md-4 col-lg-6	col-xl-6">
+          <div class="card" id="ravenclaw">
+            <div class="img-fluid"><img src="images/ravenclaw-house.jpg" class="card-img-top" alt="..."></div>
             <div class="card-body">
-              <h2 class="card-title">Ravenclaw</h2>
+              <h3 class="card-title">Ravenclaw</h3>
               <p class="card-text">The Ravenclaw motto is "Wit beyond measure is man's greatest treasure".The Head of house is the charms professore,Filius Flitwick and the house ghost is the grey lady.</p>
+              <button class="btn btn-primary">Join Ravenclaw</button>
             </div>
           </div>
         </div>
@@ -152,12 +159,74 @@
 <!-- <p>sports</p> -->
 
 <div class="container">
-<h2>Quidditch</h2><br>
-<div class="animation"><img src="images/animation.png" alt=""></div>
-
+<h1>Quidditch</h1>
+<h2> The Wizard Game</h2>
+<br><br>
+  <div class="row">
+    <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6"><div class="img-fluid" id="sports"> <img src="images/quidditch-broom-.jpg" alt="">
+    </div></div>
+    <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6"><p>
+      Quidditch is a dangerous but popular sport played by witches and wizards riding flying broomsticks.
+     Matches are played on a large oval pitch with three ring-shaped goals of different heights on each side, between two opposing teams of seven players each: three Chasers, two Beaters, the Keeper, and the Seeker. There are three different balls: the Quaffle, the two Bludgers, and the Golden Snitch.(Quidditch is a fictional sport invented by author J.K. Rowling for her fantasy book series Harry Potter.)
+     </p></div>
+  </div>
+<div class="animation img-fluid"><img src="images/animation.png" alt=""></div>
 </div>
 
 
+
+<!-- <p>How To Reach Hogwarts</p> -->
+
+
+<div class="container journey">
+  <h1>How To Reach Hogwarts</h1> <br><br>
+<div class="row">
+  <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6 platform">  <h3>1. REACH PLATFORM 9¾</h3>
+    <p>Platform 9¾ is located in London's King's Cross Station, the barrier between platforms 9 and 10 holds the secret entrance to the magical platform that can only be accessed by running straight ahead – directly into the barrier.Students of Hogwarts School of Witchcraft and Wizardry take the scarlet steam engine named the Hogwarts Express to Hogwarts from Platform 9¾ on 1 September at 11 AM sharp. To get to Platform 9¾, you run straight at the wall between 9 and 10</p></div>
+  <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6 "><div class="img-fluid"> <img src="images/med-platform-934.jpg" alt=""> </div></div>
+</div><br><br>
+<div class="row">
+  <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6  platform"><h3>2. GET INTO HOGWARTS EXPRESS</h3>
+ <p>   The Hogwarts Express is the name of the train that makes a run between London, King's Cross Station Platform 9¾ and Hogsmeade Station.The Express dutifully carries students to and from Hogwarts School of Witchcraft and Wizardry at the start and end of every term. The train leaves Platform 9¾ without fail on 1 September at 11 o'clock in the morning, arriving at Hogsmeade Station in the early evening.</p></div>
+
+  <div class="col-12	col-sm-12	col-md-12	col-lg-6	col-xl-6 "><div class="img-fluid"> <img src="images/hogwarts-express.jpg" alt="">
+  </div></div>
+
+</div>
+</div>
+
+
+<!-- <p>necessary-items-to-buy</p> -->
+
+<div class="container buy">
+  <h1>The Things You Should Acquire Mandatorily</h1><br><br>
+  <div class="card-deck">
+    <div class="card col-12	col-sm-12	col-md-6	col-lg-6	col-xl-4">
+      <div class="img-fluid"><img src="images/wand.jpg" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="card-title">A Wand</h5>
+        <p class="card-text">A wand is the object through which a witch or wizard channels his or her magic. It is made from wood and has a magical substance at its core. Wands made by Ollivander have cores of phoenix feather, unicorn hair or dragon heartstring, and are of varying woods, lengths, and flexibilities.</p>
+       <button class="btn btn-primary ml-auto">Buy Wand</button>
+      </div>
+    </div>
+    <div class="card col-12	col-sm-12	col-md-6	col-lg-6	col-xl-4">
+      <div class="img-fluid"><img src="images/broomstick.png" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="card-title">A Broomstick</h5>
+        <p class="card-text">Broomsticks, also known as brooms, are one of the means employed by wizards and witches to transport themselves between locations. Wizarding broomsticks, unlike non-magical brooms, are enchanted to fly, allowing for a witch or wizard to travel to their destination through the air, as well as for playing broom games such as Quidditch.</p>
+       <button class="btn btn-primary ml-auto">Buy Broomstick</button>
+      </div>
+    </div>
+    <div class="card col-12	col-sm-12	col-md-6	col-lg-6	col-xl-4">
+      <div class="img-fluid"><img src="images/owl.jpg" class="card-img-top" alt="..."></div>
+      <div class="card-body">
+        <h5 class="card-title">A pet</h5>
+        <p class="card-text">A student of hogwarts should take a pet with him/her. That pet can be anything, but should be polite and gentle. And they also should have an owl to use as his messenger</p>
+      <button class="btn btn-primary ml-auto">Buy Pet</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
